@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Script from 'next/script'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -12,14 +13,14 @@ export default function Home() {
         <meta name="keyword" content="next js, hunting coder blog" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-<nav className= {styles.mainnav}>
-  <ul>
-    <li>Home</li>
-    <li>About</li>
-    <li>Blog</li>
-    <li>Contact</li>
-  </ul>
-</nav>
+      <nav className={styles.mainnav}>
+        <ul>
+          <Link href="/"><li>Home</li></Link>
+          <Link href="/about"><li>About</li></Link>
+          <Link href="/blog"><li>Blog</li></Link>
+          <Link href="/contact"><li>Contact</li></Link>
+        </ul>
+      </nav>
       <main className={styles.main}>
         <h1 className={styles.title}>
           Hunting Coder
@@ -30,25 +31,25 @@ export default function Home() {
         </p>
         {/* <Script src='/sc.js' strategy='lazyOnload'></Script> */}
 
-      <div className="blogs">
-        <h2>Popular blogs</h2>
-        <div className="blogItem">
-          <h3>How to learn Javascript in 2020?</h3>
-          <p>Javascript is a language used for logic in web</p>
+        <div className="blogs">
+          <h2>Popular blogs</h2>
+          <div className="blogItem">
+            <h3>How to learn Javascript in 2020?</h3>
+            <p>Javascript is a language used for logic in web</p>
+          </div>
         </div>
-      </div>
-      <div className="blogs">
-        <div className="blogItem">
-          <h3>How to learn Javascript in 2020?</h3>
-          <p>Javascript is a language used for logic in web</p>
+        <div className="blogs">
+          <div className="blogItem">
+            <h3>How to learn Javascript in 2020?</h3>
+            <p>Javascript is a language used for logic in web</p>
+          </div>
         </div>
-      </div>
-      <div className="blogs">
-        <div className="blogItem">
-          <h3>How to learn Javascript in 2020?</h3>
-          <p>Javascript is a language used for logic in web</p>
+        <div className="blogs">
+          <div className="blogItem">
+            <h3>How to learn Javascript in 2020?</h3>
+            <p>Javascript is a language used for logic in web</p>
+          </div>
         </div>
-      </div>
       </main>
 
       <footer className={styles.footer}>
